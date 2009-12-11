@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Shøp</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="prototype.js"></script>
+    <script type="text/javascript" src="broadcaster.js"></script>
+    <script type="text/javascript" src="base.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+  <body>
+
+
+    <div id="content">
+
+      <div class="products">
+
+          <div id="product_1" class="product" data-rating="9">
+            <h2 class="title">Product 1</h2>
+            <p class="description">Awesome.</p>
+            <ul class="links">
+              <li class="add"><a href="/cart/add/1">Add to cart</a></li>
+            </ul>
+          </div>
+
+          <div id="product_2" class="product" data-rating="8">
+            <h2 class="title">Product 2</h2>
+            <p class="description">Kind of awesome.</p>
+            <ul class="links">
+              <li class="add"><a href="/cart/add/2">Add to cart</a></li>
+            </ul>
+          </div>
+
+          <div id="product_3" class="product" data-rating="3">
+            <h2 class="title">Product 3</h2>
+            <p class="description">Kind of shitty, actually.</p>
+            <ul class="links">
+              <li class="add"><a href="/cart/add/3">Add to cart</a></li>
+            </ul>
+          </div>
+
+          <div id="product_4" class="product" data-rating="5">
+            <h2 class="title">Product 4</h2>
+            <p class="description">Average.</p>
+            <ul class="links">
+              <li class="add"><a href="/cart/add/4">Add to cart</a></li>
+            </ul>
+          </div>
+
+          <div id="product_5" class="product" data-rating="7">
+            <h2 class="title">Product 5</h2>
+            <p class="description">I'd buy it.</p>
+            <ul class="links">
+              <li class="add"><a href="/cart/add/5">Add to cart</a></li>
+            </ul>
+          </div>
+
+          <div id="product_6" class="product" data-rating="0">
+            <h2 class="title">Product 6</h2>
+            <p class="description">This product really sucks, don't buy it.</p>
+            <ul class="links">
+              <li class="add"><a href="/cart/add/6">Add to cart</a></li>
+            </ul>
+          </div>
+
+      </div>
+
+    </div>
+
+    <div id="sidebar">
+
+      <div class="cart">
+        <h2 class="title">Your cart</h2>
+        <ul class="items">
+          <li class="item" data-product-id="1">Product 1</li>
+          <li class="item" data-product-id="5">Product 5</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <p id="bottom">
+      Bottom.
+    </p>
+
+
+    <script type="text/javascript">MyStore.b.fire('ready');</script>
+  </body>
+</html>
